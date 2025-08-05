@@ -117,7 +117,17 @@ button:hover {
 
 .registro a:hover {
   text-decoration: underline;
+
 }
+
+.left-panel {
+  width: 50%;
+  background: url('engenge.avif') no-repeat center center;
+  background-size: cover;
+  background-position: center;
+  display: block;
+}
+
 
 /* Responsive: tablets */
 @media screen and (max-width: 768px) {
