@@ -119,13 +119,75 @@ button:hover {
   text-decoration: underline;
 
 }
-
 .left-panel {
   width: 50%;
   background: url('engenge.avif') no-repeat center center;
   background-size: cover;
   background-position: center;
+  position: relative;
+  color: white;
+  padding: 40px;
+}
+
+.overlay {
+  position: relative;
+  z-index: 2;
+  max-width: 500px;
+  background-color: rgba(0, 0, 0, 0.4); /* fondo semitransparente */
+  padding: 100px;
+  border-radius: 10px;
+}
+
+.overlay h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.overlay h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  line-height: 1.4;
+  color: #f0f0f0;
+}
+
+.overlay ul {
+  list-style: none;
+  margin-bottom: 20px;
+  padding-left: 0;
+}
+
+.overlay ul li {
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+.kpis {
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+}
+
+.kpis div {
+  text-align: center;
+}
+
+.kpis strong {
+  font-size: 20px;
   display: block;
+  color: #fff;
+}
+
+.kpis span {
+  display: block;
+  color: #ddd;
+}
+
+/* Ocultar panel izquierdo en móviles */
+@media screen and (max-width: 480px) {
+  .left-panel {
+    display: none;
+  }
 }
 
 
